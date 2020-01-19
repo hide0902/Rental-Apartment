@@ -1,0 +1,87 @@
+.header {
+  background-color: #00ff00;
+  height: 70px;
+  padding: 10px;
+  &__title {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+.main {
+  background-color: #eeeeee;
+  height: 100vh;
+  margin: 0 220px;
+  &__title {
+    text-align: center;
+    font-size: 30px;
+  }
+  &__box {
+    padding: 20px 200px;
+    font-size: 25px;
+    &__area-box {
+      display: flex;
+      padding-bottom: 10px;
+      &__area {
+        padding-right: 20px;
+      }
+      &__box {
+
+      }
+    }
+    &__walk {
+      display: flex;
+      padding-bottom: 10px;
+      &__minute {
+        padding-right: 20px;
+      }
+    }
+    &__rent {
+      display: flex;
+      padding-bottom: 10px;
+      &__yen {
+        padding-right: 70px;
+      }
+      &__box {
+
+      }
+      h1 {
+        margin: 0 10px;
+      }
+      &__box2 {
+
+      }
+    }
+    &__floor {
+      display: flex;
+      padding-bottom: 10px;
+      &__plan {
+        padding-right: 20px;
+      }
+    }
+    &__exclusive {
+      display: flex;
+      padding-bottom: 10px;
+      &__area {
+        padding-right: 20px;
+      }
+      &__box {
+
+      }
+      h1 {
+        margin: 0 10px;
+      }
+      &__box2 {
+        
+      }
+    }
+    &__age {
+      display: flex;
+      padding-bottom: 10px;
+      &__unit {
+        padding-right: 45px;
+      }
+    }
+  }
+
+}
