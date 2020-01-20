@@ -1,3 +1,6 @@
+*{
+  box-sizing: border-box;
+}
 .header {
   background-color: #00ff00;
   height: 70px;
@@ -14,7 +17,7 @@
   margin: 0 220px;
   &__title {
     text-align: center;
-    font-size: 30px;
+    font-size: 25px;
   }
   &__box {
     padding: 20px 200px;
@@ -56,7 +59,10 @@
       display: flex;
       padding-bottom: 10px;
       &__plan {
-        padding-right: 20px;
+        padding-right: 45px;
+      }
+      &__box {
+
       }
     }
     &__exclusive {
@@ -72,7 +78,7 @@
         margin: 0 10px;
       }
       &__box2 {
-        
+
       }
     }
     &__age {
@@ -82,6 +88,19 @@
         padding-right: 45px;
       }
     }
+    &__search {
+      text-align: center;
+      &__button {
+        width: 250px;
+        height: 50px;
+        padding: 0 30px;
+        margin-left: 15px;
+        background-color: #38aef0;
+        color: white;
+        cursor: pointer;
+      }
+    }
+
   }
 
 }
