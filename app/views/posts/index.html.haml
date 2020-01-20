@@ -6,7 +6,7 @@
   .main__title
     情報を入力してください
   .main__box
-    = form_with(scope: :search, url: root_path, local: true, method: :get) do |f|
+    = form_with(scope: :search, url: lists_path, local: true, method: :get) do |f|
       .main__box__area-box
         .main__box__area-box__area
           駅を選択
