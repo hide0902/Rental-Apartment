@@ -8,11 +8,18 @@
   .main3__box
     .main3__box__list
       .main3__box__list__title
-        天王寺ハイツ
+        = @list.name
       .main3__box__list__show
-        5.3万円 / 共益費:7000円
+        = @list.rent
+        万円 / 共益費:
+        = @list.service
+        円
         %br
-        敷金:7万円 / 礼金:10万円
+        敷金:
+        = @list.security
+        万円 / 礼金:
+        = @list.key
+        万円
     .main3__box__font-box
       .main3__box__font-box__font
       .main3__box__font-box__show
@@ -21,20 +28,35 @@
         .main3__box__show-box__street__1
           所在地
         .main3__box__show-box__street__2
-          大阪市天王寺区堀江町12-5
+          = @list.street
       .main3__box__show-box__station
         .main3__box__show-box__station__1
           駅徒歩
         .main3__box__show-box__station__2
-          天王寺駅 徒歩4分
+          = @list.route
+          = @list.station
+          駅 徒歩
+          = @list.walk
+          分
       .main3__box__show-box__plan
         .main3__box__show-box__plan__1
           間取り
         .main3__box__show-box__plan__2
-          1K
+          = @list.plan
+        .main3__box__show-box__plan__3
+          専有面積
+        .main3__box__show-box__plan__4
+          = @list.exclusive
+          ㎡
       .main3__box__show-box__age
         .main3__box__show-box__age__1
           築年数
         .main3__box__show-box__age__2
-          築6年
-        
+          築
+          = @list.age
+          年
+        .main3__box__show-box__age__3
+          階
+        .main3__box__show-box__age__4
+          = @list.floor
+          階
