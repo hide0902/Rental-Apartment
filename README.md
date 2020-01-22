@@ -3,9 +3,13 @@
 ## listsテーブル
 |Column|Type|Options|
 |------|----|-------|
+|name|string||
+|street|string||
+|route|string||
 |station|string||
 |walk|integer||
-|rent||float||
+|rent|float||
+|service|integer||
 |plan|string||
 |exclusive|float||
 |age|integer||
