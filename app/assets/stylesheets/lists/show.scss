@@ -1,0 +1,132 @@
+*{
+  box-sizing: border-box;
+}
+.header {
+  background-color: #00ff00;
+  height: 70px;
+  padding: 10px;
+  &__title {
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+.main3 {
+  background-color: #eeeeee;
+  height: 150vh;
+  width: 920px;
+  margin: auto;
+  &__title {
+    font-size: 25px;
+    text-align: center;
+  }
+  &__box {
+
+    &__list {
+      padding-left: 30px;
+      &__title {
+        font-size: 30px;
+      }
+    }
+
+    &__font-box {
+      &__font {
+        background-color: white;
+        height: 500px;
+        width: 400px;
+        margin: auto;
+        margin-top: 20px
+      }
+      &__show {
+        background-color: white;
+        height: 100px;
+        width: 700px;
+        margin: auto;
+        margin-top: 20px;
+      }
+    }
+    &__show-box {
+      margin-top: 20px;
+      font-size: 20px;
+      
+      &__street {
+        margin: auto;
+        display: flex;
+        height: 60px;
+        width: 600px;
+        border:solid 1px black;
+        &__1 {
+          padding-right: 30px;
+          border-right:solid 1px black;
+          width: 120px;
+        }
+        &__2 {
+          
+        }
+      }
+      &__station {
+        margin: auto;
+        display: flex;
+        height: 60px;
+        width: 600px;
+        border:solid 1px black;
+        &__1 {
+          padding-right: 30px;
+          border-right:solid 1px black;
+          width: 120px;
+        }
+        &__2 {
+          
+        }
+      }
+      &__plan {
+        margin: auto;
+        display: flex;
+        height: 60px;
+        width: 600px;
+        border:solid 1px black;
+        &__1 {
+          padding-right: 30px;
+          border-right:solid 1px black;
+          width: 120px;
+        }
+        &__2 {
+          width: 160px;
+        }
+        &__3 {
+          padding-right: 30px;
+          border-right:solid 1px black;
+          border-left:solid 1px black ;
+          width: 120px;
+        }
+        &__4 {
+
+        }
+      }
+      &__age {
+        margin: auto;
+        display: flex;
+        height: 60px;
+        width: 600px;
+        border:solid 1px black;
+        &__1 {
+          padding-right: 30px;
+          border-right:solid 1px black;
+          width: 120px;
+        }
+        &__2 {
+          width: 160px;
+        }
+        &__3 {
+          padding-right: 30px;
+          border-right:solid 1px black;
+          border-left:solid 1px black ;
+          width: 120px;
+        }
+        &__4 {
+
+        }
+      }
+    }
+  }
+}
