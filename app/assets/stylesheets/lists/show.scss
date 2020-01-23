@@ -14,7 +14,7 @@
 .main3 {
   background-color: #f5f5dc;
   height: 150vh;
-  width: 920px;
+  width: 940px;
   margin: auto;
   &__title {
     font-size: 25px;
@@ -54,9 +54,28 @@
       &__show {
         background-color: white;
         height: 100px;
-        width: 700px;
+        width: 800px;
         margin: auto;
         margin-top: 20px;
+        display: flex;
+        
+        &__1 {
+          widows: 400px;
+          height: 100px;
+          img {
+            height: 70px;
+            width: auto;
+            margin: 15px;
+          }
+        }
+        &__2 {
+          widows: 400px;
+          img {
+            height: 70px;
+            width: auto;
+            margin: 15px;
+          }
+        }
       }
     }
     &__show-box {
