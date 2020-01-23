@@ -12,7 +12,7 @@
 }
 
 .main3 {
-  background-color: #eeeeee;
+  background-color: #f5f5dc;
   height: 150vh;
   width: 920px;
   margin: auto;
@@ -27,15 +27,29 @@
       &__title {
         font-size: 30px;
       }
+      &__show {
+        display: flex;
+        &__1 {
+          font-size: 30px;
+          color: red;
+        }
+        &__2 {
+          margin-top: 15px;
+        }
+      }
     }
 
     &__font-box {
+      
       &__font {
-        background-color: white;
+        text-align: center;
+        margin-top: 15px;
         height: 500px;
-        width: 400px;
-        margin: auto;
-        margin-top: 20px
+        img {
+          width: auto;
+          height: 500px;
+          
+        }
       }
       &__show {
         background-color: white;

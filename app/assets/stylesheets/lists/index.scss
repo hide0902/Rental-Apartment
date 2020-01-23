@@ -21,18 +21,18 @@
     
     &__box2 {
       display: flex;
-      background-color: #cccccc;
+      background-color: #f5f5dc;
       margin: auto;
-      width: 900px;
+      width: 1000px;
       height: 250px;
       margin-bottom: 20px;
       &__font{
-        background-color: white;
-        height: 170px;
-        width: 150px;
         margin: 15px;
-        border:solid 1px black;
-        
+        width: 150px;
+        img {
+          width: 150px;
+          height: auto;
+        }
       }
       &__list {
 
@@ -62,12 +62,16 @@
           display: flex;
           background-color: white;
           height: 90px;
-          width: 700px;
+          width: 750px;
           &__font {
             height: 65px;
             width: 90px;
-            border:solid 1px black;
             margin: 10px;
+            margin-right: 50px;
+            img {
+              height: 65px;
+              width: auto;
+            }
 
           }
           &__show {
@@ -78,6 +82,7 @@
             }
             &__rent {
               padding: 20px;
+              color: red;
             }
             &__security {
               padding: 20px;
