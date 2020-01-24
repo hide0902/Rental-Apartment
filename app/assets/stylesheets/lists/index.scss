@@ -23,7 +23,7 @@
       display: flex;
       background-color: #f5f5dc;
       margin: auto;
-      width: 1000px;
+      width: 1100px;
       height: 250px;
       margin-bottom: 20px;
       &__font{
@@ -62,7 +62,7 @@
           display: flex;
           background-color: white;
           height: 90px;
-          width: 785px;
+          width: 850px;
           &__font {
             height: 65px;
             width: 150px;
@@ -84,9 +84,15 @@
               width: 100px;
             }
             &__rent {
-              padding: 20px;
-              color: red;
-              widows: 120px;
+              padding: 12px;
+              width: 150px;
+              &__1 {
+                color: red;
+                font-size: 25px;
+              }
+              &__2 {
+
+              }
             }
             &__security {
               padding: 20px;

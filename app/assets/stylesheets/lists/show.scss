@@ -54,28 +54,51 @@
       &__show {
         background-color: white;
         height: 100px;
-        width: 800px;
+        width: 700px;
         margin: auto;
         margin-top: 20px;
         display: flex;
         
         &__1 {
           widows: 400px;
-          height: 100px;
           img {
             height: 70px;
             width: auto;
             margin: 15px;
           }
         }
-        &__2 {
-          widows: 400px;
-          img {
-            height: 70px;
-            width: auto;
-            margin: 15px;
-          }
-        }
+        // &__2 {
+        //   widows: 400px;
+        //   img {
+        //     height: 70px;
+        //     width: auto;
+        //     margin: 15px;
+        //   }
+        // }
+        // &__3 {
+        //   widows: 400px;
+        //   img {
+        //     height: 70px;
+        //     width: auto;
+        //     margin: 15px;
+        //   }
+        // }
+        // &__4 {
+        //   widows: 400px;
+        //   img {
+        //     height: 70px;
+        //     width: auto;
+        //     margin: 15px;
+        //   }
+        // }
+        // &__5 {
+        //   widows: 400px;
+        //   img {
+        //     height: 70px;
+        //     width: auto;
+        //     margin: 15px;
+        //   }
+        // }
       }
     }
     &__show-box {
