@@ -10,11 +10,14 @@
       .main3__box__list__title
         = @list.name
       .main3__box__list__show
-        = @list.rent
-        万円 / 共益費:
-        = @list.service
-        円
-        %br
+        .main3__box__list__show__1
+          = @list.rent
+          万円
+        .main3__box__list__show__2
+          (共益費:
+          = @list.service
+          円)
+      .main3__box__list__show__3
         敷金:
         = @list.security
         万円 / 礼金:
@@ -22,7 +25,18 @@
         万円
     .main3__box__font-box
       .main3__box__font-box__font
+        = image_tag @list.image1
       .main3__box__font-box__show
+        .main3__box__font-box__show__1
+          = image_tag @list.image1
+        .main3__box__font-box__show__1
+          = image_tag @list.image2
+        .main3__box__font-box__show__1
+          = image_tag @list.image3
+        .main3__box__font-box__show__1
+          = image_tag @list.image4
+        .main3__box__font-box__show__1
+          = image_tag @list.image5
     .main3__box__show-box
       .main3__box__show-box__street
         .main3__box__show-box__street__1

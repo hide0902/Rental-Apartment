@@ -12,82 +12,102 @@
 }
 
 .main2 {
-  
   margin: auto;
   &__title {
     font-size: 25px;
     text-align: center;
   }
   &__box {
-    display: flex;
-    background-color: #cccccc;
-    margin: auto;
-    width: 900px;
-    height: 250px;
     
-    &__font{
-      background-color: white;
-      height: 170px;
-      width: 150px;
-      margin: 15px;
-      border:solid 1px black;
-      
-    }
-    &__list {
-
-      &__title {
-        font-size: 30px;
+    &__box2 {
+      display: flex;
+      background-color: #f5f5dc;
+      margin: auto;
+      width: 1100px;
+      height: 250px;
+      margin-bottom: 20px;
+      &__font{
         margin: 15px;
-      }
-      
-      &__show {
-          display: flex;
-          margin: 30px 15px;
-          font-size: 20px;
-        &__street {
-          
-          padding-right: 30px;
-        }
-        &__station {
-          
-          padding-right: 30px;
-        }
-        &__age {
-          
-          
+        width: 150px;
+        img {
+          width: 150px;
+          height: auto;
         }
       }
-      &__room-box {
-        display: flex;
-        background-color: white;
-        height: 90px;
-        width: 650px;
-        &__font {
-          height: 65px;
-          width: 90px;
-          border:solid 1px black;
-          margin: 10px;
+      &__list {
 
+        &__title {
+          font-size: 30px;
+          margin: 15px;
         }
+        
         &__show {
+            display: flex;
+            margin: 30px 15px;
+            font-size: 20px;
+          &__street {
+            
+            padding-right: 30px;
+          }
+          &__station {
+            
+            padding-right: 30px;
+          }
+          &__age {
+            
+            
+          }
+        }
+        &__room-box {
           display: flex;
-          font-size: 15px;
-          &__floor {
-            padding: 30px;
-          }
-          &__rent {
-            padding: 20px;
-          }
-          &__security {
-            padding: 20px;
-          }
-          &__plan {
-            padding: 20px;
-          }
-          &__show-button {
-            padding: 30px;
-          }
+          background-color: white;
+          height: 90px;
+          width: 850px;
+          &__font {
+            height: 65px;
+            width: 150px;
+            margin: 10px;
+            text-align: center;
+            
+            img {
+              height: 65px;
+              width: auto;
+              
+            }
 
+          }
+          &__show {
+            display: flex;
+            font-size: 15px;
+            &__floor {
+              padding: 30px;
+              width: 100px;
+            }
+            &__rent {
+              padding: 12px;
+              width: 150px;
+              &__1 {
+                color: red;
+                font-size: 25px;
+              }
+              &__2 {
+
+              }
+            }
+            &__security {
+              padding: 20px;
+              width: 150px;
+            }
+            &__plan {
+              padding: 20px;
+              width: 120px;
+            }
+            &__show-button {
+              padding: 30px;
+            
+            }
+
+          }
         }
       }
     }
