@@ -1,84 +1,85 @@
 .header
   .header__title
     Rental Apartment
-
+.main-back
 .main
   .main__title
     情報を入力してください
   .main__box
-    = form_with(scope: :search, url: lists_path, local: true, method: :get) do |f|
+    = form_with(url: posts_searches_path, local: true, method: :get) do |form|
       .main__box__area-box
         .main__box__area-box__area
           駅を選択
         .main__box__area-box__box
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "1"}>/
-            天王寺
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "2"}>/
-            寺田町
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "3"}>/
-            桃谷
-          %br/
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "4"}>/
-            鶴橋
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "5"}>/
-            玉造
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "6"}>/
-            森ノ宮
-          %br/
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "7"}>/
-            大阪城公園
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "8"}>/
-            京橋
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "9"}>/
-            桜ノ宮
-          %br/
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "10"}>/
-            天満
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "11"}>/
-            大阪
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "12"}>/
-            福島
-          %br/
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "13"}>/
-            野田
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "14"}>/
-            西九条
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "15"}>/
-            弁天町
-          %br/
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "16"}>/
-            大正
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "17"}>/
-            芦原橋
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "18"}>/
-            今宮
-          %br/
-          %label
-            %input{:name => "checbox1", :type => "checkbox", :value => "19"}>/
+          = form.text_field :keyword, placeholder: "駅を検索する", class: "main__box__area-box__box__1"
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "1"}>/
+          -#   天王寺
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "2"}>/
+          -#   寺田町
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "3"}>/
+          -#   桃谷
+          -# %br/
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "4"}>/
+          -#   鶴橋
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "5"}>/
+          -#   玉造
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "6"}>/
+          -#   森ノ宮
+          -# %br/
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "7"}>/
+          -#   大阪城公園
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "8"}>/
+          -#   京橋
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "9"}>/
+          -#   桜ノ宮
+          -# %br/
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "10"}>/
+          -#   天満
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "11"}>/
+          -#   大阪
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "12"}>/
+          -#   福島
+          -# %br/
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "13"}>/
+          -#   野田
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "14"}>/
+          -#   西九条
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "15"}>/
+          -#   弁天町
+          -# %br/
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "16"}>/
+          -#   大正
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "17"}>/
+          -#   芦原橋
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "18"}>/
+          -#   今宮
+          -# %br/
+          -# %label
+          -#   %input{:name => "checbox1", :type => "checkbox", :value => "19"}>/
             新今宮
       .main__box__walk
         .main__box__walk__minute
           徒歩何分
         .main__box__walk__box
-          %select{:name => ""}
+          %select{:name => "keyword2"}
             %option{:value => "999"} 指定しない
             %option{:value => "1"} 1分以内
             %option{:value => "5"} 5分以内
@@ -90,8 +91,8 @@
         .main__box__rent__yen
           賃料
         .main__box__rent__box
-          %select{:name => ""}
-            %option{:value => "999"} 下限なし
+          %select{:name => "keyword3"}
+            %option{:value => "0"} 下限なし
             %option{:value => "3"} 3万円以上
             %option{:value => "3.5"} 3.5万円以上
             %option{:value => "4"} 4万円以上
@@ -130,7 +131,7 @@
             %option{:value => "100"} 100万円以上
         %h1 〜
         .main__box__rent__box2
-          %select{:name => ""}
+          %select{:name => "keyword4"}
             %option{:value => "999"} 上限なし
             %option{:value => "3"} 3万円以下
             %option{:value => "3.5"} 3.5万円以下
@@ -173,56 +174,56 @@
           間取り
         .main__box__floor__box
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "1"}>/
+            %input{:name => "checbox1", :type => "checkbox", :value => "ワンルーム"}>/
             ワンルーム
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "2"}>/
+            %input{:name => "checbox2", :type => "checkbox", :value => "1K"}>/
             1K
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "3"}>/
+            %input{:name => "checbox3", :type => "checkbox", :value => "1DK"}>/
             1DK
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "4"}>/
+            %input{:name => "checbox4", :type => "checkbox", :value => "1LDK"}>/
             1LDK
           %br/
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "1"}>/
+            %input{:name => "checbox5", :type => "checkbox", :value => "2K"}>/
             2K
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "2"}>/
+            %input{:name => "checbox6", :type => "checkbox", :value => "2DK"}>/
             2DK
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "3"}>/
+            %input{:name => "checbox7", :type => "checkbox", :value => "2LDK"}>/
             2LDK
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "4"}>/
+            %input{:name => "checbox8", :type => "checkbox", :value => "3K"}>/
             3K
           %br/
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "1"}>/
+            %input{:name => "checbox9", :type => "checkbox", :value => "3DK"}>/
             3DK
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "2"}>/
+            %input{:name => "checbox10", :type => "checkbox", :value => "3LDK"}>/
             3LDK
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "3"}>/
+            %input{:name => "checbox11", :type => "checkbox", :value => "4K"}>/
             4K
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "4"}>/
+            %input{:name => "checbox12", :type => "checkbox", :value => "4DK"}>/
             4DK
           %br/
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "1"}>/
+            %input{:name => "checbox13", :type => "checkbox", :value => "4LDK"}>/
             4LDK
           %label
-            %input{:name => "checbox2", :type => "checkbox", :value => "2"}>/
+            %input{:name => "checbox14", :type => "checkbox", :value => "5K"}>/
             5K以上
       .main__box__exclusive
         .main__box__exclusive__area
           専有面積
         .main__box__exclusive__box
-          %select{:name => ""}
-            %option{:value => "999"} 下限なし
+          %select{:name => "keyword5"}
+            %option{:value => "0"} 下限なし
             %option{:value => "20"} 20㎡以上
             %option{:value => "25"} 25㎡以上
             %option{:value => "30"} 30㎡以上
@@ -239,7 +240,7 @@
             %option{:value => "100"} 100㎡以上
         %h1 〜
         .main__box__exclusive__box2
-          %select{:name => ""}
+          %select{:name => "keyword6"}
             %option{:value => "999"} 上限なし
             %option{:value => "20"} 20㎡以下
             %option{:value => "25"} 25㎡以下
@@ -259,7 +260,7 @@
         .main__box__age__unit
           築年数
         .main__box__age__box
-          %select{:name => ""}
+          %select{:name => "keyword7"}
             %option{:value => "999"} 指定しない
             %option{:value => "0"} 新築
             %option{:value => "1"} 1年以内
@@ -278,4 +279,4 @@
         .main__box__construction
           
       .main__box__search
-        = f.submit "条件を検索する", class: "main__box__search__button"
+        = form.submit "条件を検索する", class: "main__box__search__button"

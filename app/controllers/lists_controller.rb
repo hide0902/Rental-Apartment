@@ -1,6 +1,6 @@
 class ListsController < ApplicationController
   def index
-    @lists = List.all
+    @posts = Post.search(params[:keyword])
   end
 
   def show
